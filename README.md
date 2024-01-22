@@ -19,6 +19,7 @@ Utilizing Logistic Regression, KNN, Decision Tree, SVM, and Random Forest for mo
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/3.png) 
 Logistic regression is selected for final modelling methods to predict the likelihood of loan repayment as it has the higest classification accuracy (82.4%)
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/Screenshot%202023-12-21%20at%2015.38.10.png)
+Actual outcome, predicted target, probability of good loans and bad loans are added to a new dataset and export to csv file.
 ### 5. Decision Making
 Final Decile methodology is used to accept or reject new loan application, targeting profitability or market penetration.
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/4.png) 
