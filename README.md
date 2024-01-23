@@ -1,7 +1,9 @@
 # Credit-Scoring-Analytics
 
 ## 📝 Overview
-Banks and financial institutions have different business strategies. Normally, public banks tend to minimise business risk, considering only hish cred score loan applicants for leading. Private banks tend to maximise profit, which need to identify optimal credit score toelances. This optimisation is focused on this analytics. New entrants tend to consider every applicant no matter they have low credit score or no credit at all.
+Banks and financial institutions employ diverse business strategies. Typically, public banks aim to minimize business risk by exclusively considering loan applicants with high credit scores for lending. On the other hand, private banks seek to maximize profits, necessitating the identification of optimal credit score tolerances. This optimization process is a key focus of analytics within the industry. New entrants, in contrast, often adopt a more inclusive approach, considering applicants regardless of whether they have a low credit score or no credit history at all. 
+
+This analysis not only aids in making informed decisions regarding loan applications but also offers insights into the delicate balance between profitability and market expansion in the dynamic landscape of financial operations.
 ##  👨‍💻 Analysis 
 ### 1. Problem Statement
 The objective is to construct an in-house risk model for subprime mortgages (a type of loan granted to low credit scores applicant ), optimizing profit for a bank. The profit structure involves a gain of $100 from a good customer and a loss of $500 from a bad customer. The dataset overview can be found here: [Credit Scoring Dataset](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/1.%20Credit%20Scoring.csv):
@@ -19,9 +21,13 @@ Utilizing Logistic Regression, KNN, Decision Tree, SVM, and Random Forest for mo
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/4.png) 
 Logistic regression is selected for final modelling methods to predict the likelihood of loan repayment as it has the higest classification accuracy (82.4%)
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/5.png)
-Actual outcome, predicted target, probability of good loans and bad loans are added to a new dataset and export to csv file.
+Actual outcome, predicted target, probability of good loans and bad loans are are incorporated into a fresh dataset and then exported to a CSV file.
 ### 5. Decision Making
-Final Decile methodology is used to accept or reject new loan application, targeting profitability or market penetration. 750 observations are divided into 10 equal parts after sorting in descending probability of good loans. For each part, the number of bad, good loans, the minimum of probability of good loans, cumulative good, bad loans are cacluated using Pivot Table. As the loss from a bad loan is $500 and the profit from a good loan is $100. Profit for each part is calculated. When the minimum of probability of good loans equals 87.31%, the profit reaches the peak. Thus,if banks need to maximise profit, the probability of good loans need higher than 87.31%. if banks need to expand market, the probability of good loans need higher than 83.75%.
+Decile methodology is employed for evaluating and determining the approval or rejection of new loan applications, with a focus on optimizing profitability or achieving broader market penetration. The process involves partitioning 750 observations into 10 equal segments after arranging them in descending order based on the probability of good loans.
+
+Within each segment,  the count of bad and good loans, the minimum probability of good loans, cumulative number for good and bad loans are computed using a Pivot Table. Given that a bad loan incurs a loss of $500 and a good loan contributes a profit of $100, the profitability for each segment is derived.
+
+Notably, the analysis reveals that the profit attains its zenith when the minimum probability of good loans reaches 87.31%. Therefore, to maximize profit, it is imperative for banks to set the threshold for the probability of good loans higher than 87.31%. Conversely, if the strategic goal is to expand market presence, the probability of good loans should be maintained at a level higher than 83.75%. 
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/6.png)
 
 
