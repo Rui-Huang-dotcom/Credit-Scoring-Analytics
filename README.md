@@ -21,7 +21,7 @@ Logistic regression is selected for final modelling methods to predict the likel
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/Screenshot%202023-12-21%20at%2015.38.10.png)
 Actual outcome, predicted target, probability of good loans and bad loans are added to a new dataset and export to csv file.
 ### 5. Decision Making
-Final Decile methodology is used to accept or reject new loan application, targeting profitability or market penetration.
+Final Decile methodology is used to accept or reject new loan application, targeting profitability or market penetration. 750 observations are divided into 10 equal parts after sorting in descending probability of good loans. For each part, the number of bad, good loans, the minimum of probability of good loans, cumulative good, bad loans are cacluated using Pivot Table. As the loss from a bad loan is $500 and the profit from a good loan is $100. Profit for each part is calculated. When the minimum of probability of good loans equals 87.31%, the profit reaches the peak. Thus,if banks need to maximise profit, the probability of good loans need higher than 87.31%. if banks need to expand market, the probability of good loans need higher than 83.75%.
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/4.png) 
 
 
