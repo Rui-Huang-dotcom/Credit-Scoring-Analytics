@@ -1,0 +1,12 @@
+Decile,Bad,Min of prob_0,Good,Cumulative Good,Cumulative Bad,Profit ,,Assumptions,,,
+1,0,0.969329913,75,75,0,7500,,Loss from a bad loan (Target = 1),,,500
+2,3,0.956284708,72,147,3,13200,,Profit from a good loan (Target = 0),,,100
+3,3,0.93675439,72,219,6,18900,,,,,
+4,5,0.918397876,70,289,11,23400,,Final Recommendation: Keeping Only Profitability in Mind,,,
+5,12,0.899345364,63,352,23,23700,,"Approve Loan Application, if Probability for Target = 0 is higher than",,,87.31%
+6,4,0.87306156,71,423,27,28800,,,,,
+7,16,0.837540245,59,482,43,26700,,,,,
+8,15,0.771667945,59,541,58,25100,,Final Recommendation: Keeping Profitability & Expansion in Mind,,,
+9,21,0.658546714,60,601,70,25100,,"Approve Loan Application, if Probability for Target = 0 is higher than",,,83.75%
+10,37,0.087979346,54,655,107,12000,,,,,
+Grand Total,116,0.087979346,,,,,,,,,
