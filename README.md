@@ -19,8 +19,11 @@ Power BI is employed, illustrating 2500 good loans and 500 bad loans.
 ### 4. Data Modelling
 Utilizing Logistic Regression, KNN, Decision Tree, SVM, and Random Forest for modeling:
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/4.png) 
+
 Logistic regression is selected for final modelling methods to predict the likelihood of loan repayment as it has the higest classification accuracy (84.93%)
+
 ![](https://github.com/Rui-Huang-dotcom/Credit-Scoring-Analytics/blob/main/image/5.png)
+
 Actual outcome, predicted target, probability of good loans and bad loans are are incorporated into a fresh dataset and then exported to a CSV file.
 ### 5. Decision Making
 Decile methodology is employed for evaluating and determining the approval or rejection of new loan applications, with a focus on optimizing profitability or achieving broader market penetration. The process involves partitioning 750 observations into 10 equal segments after arranging them in descending order based on the probability of good loans.
